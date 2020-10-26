@@ -37,6 +37,7 @@ def create_organization():
 
 
 # 统一社会信用代码 18位
+sum = 0
 def create_social_credit():
     manage_code = [9]  # 登记管理部门代码：9-工商
     type_code = [1, 2, 3, 9]  # 9-1-企业，9-2-个体工商户，9-3-农民专业合作社，9-9-其他
