@@ -6,9 +6,9 @@ def RandomEmail( emailType=None, rang=None):
         __randomEmail = random.choice(__emailtype)
     else:
         __randomEmail = emailType
-    # 如果没有指定邮箱长度，默认在4-10之间随机
+    # 如果没有指定邮箱长度，默认在6-10之间随机
     if rang == None:
-        __rang = random.randint(4, 10)
+        __rang = random.randint(6, 10)
     else:
         __rang = int(rang)
     __Number = "0123456789qbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPWRSTUVWXYZ"
