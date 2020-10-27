@@ -26,4 +26,8 @@ def ident_generator():
     key = {0: '1', 1: '0', 2: 'X', 3: '9', 4: '8', 5: '7', 6: '6', 7: '5', 8: '4', 9: '3', 10: '2'}
 
     # 拼接得到完整的18位身份证号
-    return ident + key[summation % 11]
+    return ','+ident + key[summation % 11]
+
+if __name__ == '__main__':
+    for i in range(0,10):
+        print(ident_generator())

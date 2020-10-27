@@ -6,4 +6,4 @@ def phone_num():
     start = random.choice(num_start)
     end = ''.join(random.sample(string.digits,8))
     res = start+end
-    return res
+    return ','+res

@@ -479,7 +479,7 @@ def gen_bank_card_gonghang(card_type='credits', cardBin='622239'):
     else:
         last_digit = 0
     bank_card = bank_card + str(last_digit)
-    return bank_card
+    return ','+bank_card
 
 #农行银行卡
 def gen_bank_card_nonghang(card_type='credits', cardBin='628346'):
@@ -513,7 +513,7 @@ def gen_bank_card_nonghang(card_type='credits', cardBin='628346'):
     else:
         last_digit = 0
     bank_card = bank_card + str(last_digit)
-    return bank_card
+    return ','+bank_card
 
 
 if __name__ == '__main__':
